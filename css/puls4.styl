@@ -1,5 +1,6 @@
 azul = #22BCE0
 gris_oscuro = #444
+naranja=#DD4F24
 
 body
 	background #E8E8E8
@@ -11,6 +12,7 @@ header
 	background gris_oscuro
 	color white
 	padding 0.5em
+	position relative
 
 	.logo
 		border-right 1px solid azul
@@ -29,10 +31,24 @@ header
 			margin 0
 			padding	0
 	.usuario
+		position absolute
+		right 10px
+		top 10px
+
 		.avatar
 			img
 				width 50px
 				border-radius 50%
+
+		.flechita
+			background naranja
+			color white
+			display block
+			position absolute
+			text-align right
+			width 2em
+			top 0
+
 nav
 	background azul
 
